@@ -1,0 +1,32 @@
+.table {
+  width: 100%;
+  box-shadow: 1px 3px 8px 5px rgba(34, 60, 80, 0.25);
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.thead {
+  background-color: #7ba8ce;
+}
+
+.heading {
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #dcdcdc;
+}
+
+.tableRow:nth-child(2n) {
+  background-color: #ededed;
+}
+
+.tableData {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #6f6f6f;
+  border: 1px solid #dcdcdc;
+}

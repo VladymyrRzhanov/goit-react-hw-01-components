@@ -1,0 +1,34 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.pointer {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.online {
+  composes: pointer;
+  background-color: green;
+}
+
+.offline {
+  composes: pointer;
+  background-color: red;
+}
+
+.itemImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 24px;
+}

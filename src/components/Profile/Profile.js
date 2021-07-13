@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import Container from "../Container/Container";
 import s from "./Profile.module.css";
 
 const Profile = ({ avatar, name, tag, location, stats: { followers, views, likes } }) => (
-    <Container>
+    <>
         <div className={s.card}>
             <div>
                 <img className={s.imgProfile}
@@ -30,7 +29,7 @@ const Profile = ({ avatar, name, tag, location, stats: { followers, views, likes
                 </li>
             </ul>
         </div>
-    </Container>
+    </>
 );
 
 Profile.propTypes = {
