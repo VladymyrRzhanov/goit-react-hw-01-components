@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import randomColor from "../../utils/randomColor";
 import s from "./Statistics.module.css";
 
 const Statistics = ({ title, stats }) => (
@@ -6,10 +7,10 @@ const Statistics = ({ title, stats }) => (
         {title && <h3 className={s.title}>{title}</h3>}
 
         <ul className={s.list}>
-            {stats.map(stat => {
-                return (<li className={s.item} style={{backgroundColor: '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase()}} key={stat.id}>
-                    <span className={s.label}>{stat.label}</span>
-                    <span className={s.value}>{stat.percentage}%</span>
+            {stats.map(({id,label,percentage}) => {
+                return (<li className={s.item} style={{backgroundColor: randomColor()}} key={id}>
+                    <span className={s.label}>{label}</span>
+                    <span className={s.value}>{percentage}%</span>
                 </li>)
             })}
         </ul>

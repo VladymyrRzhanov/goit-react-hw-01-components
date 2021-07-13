@@ -3,6 +3,14 @@
   align-items: center;
   justify-content: flex-start;
   list-style: none;
+  width: 300px;
+  padding: 20px 30px 20px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 8px 5px rgba(34, 60, 80, 0.25);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .pointer {
